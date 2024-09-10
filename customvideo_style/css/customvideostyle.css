@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.video_container{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    margin: 0 auto;
+}
+.customvideo{
+    width: 600px;
+    height: 500px;
+}
+/*--------------------------------------------------*/
+.controls{
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 10px 20px 10px;
+    background-color: rgba(0, 0, 0, 0.884);
+    gap: 5px;
+}
+.controls_top,.controls_top #seekBar,.controls_bottom #volumeslider{
+    width: 100%;
+    cursor: pointer;
+}
+.controls_bottom #volumeslider{
+    width: 50%;
+}
+.controls_bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+.controls_bottom .control_audio,.controls_bottom .control_video{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.controls_bottom .control_audio{
+    width: 65%;
+}
+.controls_bottom .control_video{
+    gap: 25px;
+    padding-right: 45px;
+    width: 620px;
+}
+.control_item{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.774);
+    cursor: pointer;
+}
